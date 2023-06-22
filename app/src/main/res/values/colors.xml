@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="indigo_200">#FF9FA8DA</color>
+    <color name="indigo_500">#48B1EA</color>
+    <color name="indigo_800">#045981</color>
+    <color name="light_blue_200">#4875AE</color>
+    <color name="light_blue_700">#7D61E6</color>
+    <color name="red_700">#FFD32F2F</color>
+    <color name="red_400">#FFEF5350</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Medicine Reminder</string>
+    <string name="fab_description">Add new reminder</string>
+</resources>

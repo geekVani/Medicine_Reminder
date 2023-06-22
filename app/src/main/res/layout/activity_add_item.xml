@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/layout_background">
+
+    <EditText
+        android:id="@+id/etMedicineName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/medicine_drawable"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:hint="Medicine Name"
+        android:background="@drawable/edittext_background"/>
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/description_drawable"
+        android:drawablePadding="10dp"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:minLines="3"
+        android:maxLines="5"
+        android:background="@drawable/edittext_background"/>
+
+    <EditText
+        android:id="@+id/etStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/date_drawable"
+        android:drawablePadding="10dp"
+        android:hint="Start Date"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/etEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/date_drawable"
+        android:drawablePadding="10dp"
+        android:hint="End Date"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/time_drawable"
+        android:drawablePadding="10dp"
+        android:hint="Time"
+        android:inputType="time"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Reminder"
+        android:layout_margin="20dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"/>
+
+</LinearLayout>
+
