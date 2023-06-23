@@ -75,8 +75,6 @@ class AddItemActivity : AppCompatActivity() {
      * Setting Calendar view to get date and time picker dialog boxes
      * */
     private fun setUpDateTimepickers() {
-        val calendar = Calendar.getInstance()
-
         itemBinding.etStartDate.setOnClickListener {
             showDatePicker { year, month, day ->
                 val formattedDate = formatDate(year, month, day)

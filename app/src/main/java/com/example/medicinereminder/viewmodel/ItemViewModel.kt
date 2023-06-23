@@ -17,27 +17,23 @@ import kotlinx.coroutines.launch
 
 class ItemViewModel (application: Application) :AndroidViewModel(application) {
 
-    // on below line we are creating a variable
-    // for our all notes list and repository
+    // creating a variable  all items list and repository
     val allItems : LiveData<List<Item>>
     private val repository : ItemRepository
 
-    // on below line we are initializing
-    // our dao, repository and all notes
+    // initializing dao, repository and all items
     init {
         val dao = ItemDatabase.getDatabase(application).getItemDao()
         repository = ItemRepository(dao)
         allItems = repository.allItems
     }
 
-    // on below line we are creating a new method for deleting a note. In this we are
-    // calling a delete method from our repository to delete our note.
+    // creating a new method for deleting a item
     fun deleteItem (item: Item) = viewModelScope.launch(Dispatchers.IO) {
         repository.delete(item)
     }
 
-    // on below line we are creating a new method for adding a new note to our database
-    // we are calling a method from our repository to add a new note.
+    // creating a new method for adding a new item to database
     fun addItem(item: Item) = viewModelScope.launch(Dispatchers.IO) {
         repository.insert(item)
     }

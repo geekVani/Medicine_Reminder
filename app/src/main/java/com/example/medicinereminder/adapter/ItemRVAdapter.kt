@@ -11,7 +11,6 @@ import com.example.medicinereminder.R
 import com.example.medicinereminder.model.roomDB.Item
 
 class ItemRVAdapter(
-    val context: Context,
     val deleteInterface: ItemDeleteInterface): RecyclerView.Adapter<ItemRVAdapter.ViewHolder>() {
 
     // creating a variable for all items list.

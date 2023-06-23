@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity(), ItemDeleteInterface {
         mainBinding.itemsRV.layoutManager = LinearLayoutManager(this)
 
         // Initializing the adapter for the recycler view.
-        val itemRVAdapter = ItemRVAdapter(this, this)
+        val itemRVAdapter = ItemRVAdapter(this)
 
         // Setting the adapter to the recycler view.
         mainBinding.itemsRV.adapter = itemRVAdapter
